@@ -7,7 +7,7 @@ import csv
 def printBanner():
     print("\n\033[1;32;40m────────TOURNAMENT MATCHMAKING SCRIPT────────\033[0;37;40m\
             \n           Made by:\033[1;32;40m Subhayu Kr Bala\033[0;37;40m\
-            \n            Website: \033[1;32;40msubhayu.codes\033[0;37;40m\
+            \n        Website: \033[1;32;40mhttps://subhayu.codes\033[0;37;40m\
             \n─────────────────────────────────────────────\033[0;37;40m")
 
 
@@ -32,7 +32,7 @@ def readTeamsData():
             print("\033[0;35;40mError! No matching file found.\033[0;36;40m\nTry again\033[1;37;40m")
             return readTeamsData()
     else:
-        nTeams = int(input("\033[1;31;40mEnter no. of teams : \033[1;37;40m"))
+        nTeams = int(input("\033[1;31;40mEnter no. of players : \033[1;37;40m"))
         teamsList.extend(range(1, nTeams+1))
         #  print("\nTeam data :", teamsList)
     return teamsList
